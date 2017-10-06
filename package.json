@@ -17,6 +17,21 @@
   },
   "homepage": "https://github.com/gekstone/up-qode#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-watch": "^4.3.11",
+    "imagemin-svgo": "^5.2.2",
+    "postcss-inline-svg": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
   }
 }
