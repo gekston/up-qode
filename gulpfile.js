@@ -14,41 +14,41 @@ var postcss = require('gulp-postcss'),
     svgmin = require('gulp-svgmin');
 
 gulp.task('sass', function () {
-return gulp.src('./scss/**/*.scss')
-.pipe(sourcemaps.init())
-.pipe(sass().on('error', sass.logError))
-.pipe(postcss([
-  inlinesvg({ /* options */ }),
-  autoprefixer()
-]))
-.pipe(sourcemaps.write())
-.pipe(cssnano())
-.pipe(gulp.dest('./build/css'));
+  return gulp.src('./dist/style/*.scss')
+  .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(postcss([
+    inlinesvg({ /* options */ }),
+    autoprefixer()
+  ]))
+  .pipe(sourcemaps.write())
+  .pipe(cssnano())
+  .pipe(gulp.dest('./app/css'));
 });
 
 gulp.task('clean-css', function () {
-return gulp.src('build/css/*.css', {read: false})
-.pipe(clean());
+  return gulp.src('app/css/*.css', {read: false})
+  .pipe(clean());
 });
 
 gulp.task('sass:watch', function () {
-gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch('./dist/style/**/*.scss', ['sass']);
 });
 
 gulp.task('webserver', ['clean-css','sass:watch'], function() {
-gulp.src('./')
-.pipe(server({
-  livereload: true,
-  directoryListing: true,
-  defaultFile: './index.html',
-  open: true
-}));
+  gulp.src('./')
+  .pipe(server({
+    livereload: true,
+    directoryListing: true,
+    defaultFile: './index.html',
+    open: true
+  }));
 });
 
 gulp.task('img-min', () =>
-gulp.src('./img/*/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('build/img/'))
+gulp.src('./dist/img/*/*.*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('app/img/'))
 );
 
 gulp.task('default', ['clean-css','sass','sass:watch','webserver'], function () {});
