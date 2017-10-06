@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gekstone/up-qode/issues"
   },
-  "homepage": "https://github.com/gekstone/up-qode#readme"
+  "homepage": "https://github.com/gekstone/up-qode#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
