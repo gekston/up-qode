@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+  background-color: black;
+}
+
+@import './header/header';
+@import './header/nav-menu';
+@import './header/search';
+@import './header/head-menu';

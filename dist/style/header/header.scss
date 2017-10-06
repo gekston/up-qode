@@ -1,0 +1,27 @@
+.wrapp {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #FFFFFF;
+}
+.head {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //justify-content: space-evenly;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+  &.container {
+    padding: 0;
+  }
+  &__link {
+    flex-grow: 1;
+    text-align: left;
+    line-height: 0.9;
+    &.col-2 {
+      padding: 0;
+    }
+  }
+}

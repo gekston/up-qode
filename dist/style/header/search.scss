@@ -1,0 +1,16 @@
+.head__search {
+  &.col-2 {
+    padding-left: 10px;
+  }
+  &-form {
+    &_input {
+      background-color: #e8e4f1;
+      outline: none;
+      border: none;
+      height: 30px;
+      *:focus {
+        outline: none;
+      }
+    }
+  }
+}
