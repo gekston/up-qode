@@ -1,0 +1,19 @@
+{
+  "name": "up-qode",
+  "version": "1.0.0",
+  "description": "test landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gekstone/up-qode.git"
+  },
+  "author": "Nebeschenko Ichor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gekstone/up-qode/issues"
+  },
+  "homepage": "https://github.com/gekstone/up-qode#readme"
+}
