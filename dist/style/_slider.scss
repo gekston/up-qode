@@ -18,7 +18,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: url('/dist/img/slider-img.jpg') no-repeat center top; 
+      background: url('/app/img/slider-img.jpg') no-repeat center top; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -98,6 +98,7 @@
       height: 10px;
       top: 45%;
       left: 45%;
+      position: absolute;
     }
     &:hover {
       cursor: pointer;
