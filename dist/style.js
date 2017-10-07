@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   let slideCount =  document.querySelectorAll('.slider-list__item').length,
       slideWidth =  document.querySelector('.slider-list__item').offsetWidth,
-      slideHeight = document.querySelector('.slider-list__item-img').offsetHeight,
+      slideHeight = document.querySelector('.slider-list__item').offsetHeight,
       lastSlider = document.querySelector('.slider-list .slider-list__item:last-child'),
       slideList = document.querySelector('.slider-list'),
       sliderUlWidth = slideCount * slideWidth;
