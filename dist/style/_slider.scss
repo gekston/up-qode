@@ -84,7 +84,6 @@
   &-btn {
     display: block;
     background-color: rgba(255, 255, 255, 0.2);
-    
     width: 60px;
     height: 60px;
     top: 45%;
@@ -99,6 +98,11 @@
       top: 45%;
       left: 45%;
       position: absolute;
+      background: url('/app/img/shevron.png') no-repeat center top; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
     &:hover {
       cursor: pointer;
@@ -106,6 +110,9 @@
     &__left {}
     &__right {
       right: 0;
+      &:after {
+        transform: rotate(180deg);
+      }
     }
   }
 }
