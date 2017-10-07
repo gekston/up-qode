@@ -1,19 +1,72 @@
 .choose {
+  font-family: 'Lato', sans-serif;
+  height: 690px;
   &__caption {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #232323;
     &-color {
-
+      color: #009dda;
     }
   }
+  &__title {
+    font-size: 14px;
+    text-align: center;
+    color: #999999;
+    margin: 0 auto;
+  }
   &__advantage {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
     &-item {
+      width: 200px;
+      border: 1px solid #ebebeb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 35px 20px;
+      font-size: 14px;
       &__img {
-
+        display: block;
+        width: 65px;
+        height: 55px;
+        &-heart {
+          background: url('/app/img/sprite-choose.png') -63px -53px;
+        }
+        &-quote {
+          background: url('/app/img/sprite-choose.png') -63px -160px;
+        }
+        &-laptop {
+          background: url('/app/img/sprite-choose.png') -64px -105px;
+        }
+        &-star {
+          background: url('/app/img/sprite-choose.png') -63px -217px;
+        }
+        &-flag {
+          background: url('/app/img/sprite-choose.png') -63px 0px;
+        }
       }
       &__title {
-
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
       }
       &__description {
-
+        color: #373737;
+        text-align: center;
+      }
+      &__seemore {
+        background-color: #503392;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        &-title {}
+        &-link {}
       }
     }
   }
