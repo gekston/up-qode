@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", function(){
       lastSlider = document.querySelector('.slider-list .slider-list__item:last-child'),
       slideList = document.querySelector('.slider-list'),
       sliderUlWidth = slideCount * slideWidth;
-
     slideList.style.width = sliderUlWidth + 'px';
     slideList.style.height = slideHeight + 'px';
     slideList.style.marginLeft = - slideWidth + 'px';
-
     slideList.insertBefore(lastSlider, slideList.children[0]);
 
     function slideLeft() {
