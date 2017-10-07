@@ -46,7 +46,7 @@ gulp.task('webserver', ['clean-css','sass:watch'], function() {
 });
 
 gulp.task('img-min', () =>
-gulp.src('./dist/img/*/*.*')
+gulp.src('./dist/img/**/*.*')
   .pipe(imagemin())
   .pipe(gulp.dest('app/img/'))
 );
