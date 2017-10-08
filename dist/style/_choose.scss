@@ -31,10 +31,12 @@
       align-items: center;
       padding: 35px 20px;
       font-size: 14px;
+      position: relative;
       &__img {
         display: block;
         width: 65px;
         height: 55px;
+        margin: 0 0 10px 0;
         &-heart {
           background: url('/app/img/sprite-choose.png') -63px -53px;
         }
@@ -48,13 +50,14 @@
           background: url('/app/img/sprite-choose.png') -63px -217px;
         }
         &-flag {
-          background: url('/app/img/sprite-choose.png') -63px 0px;
+          background: url('/app/img/sprite-choose.png') -63px 1px;
         }
       }
       &__title {
         font-weight: 900;
         text-transform: uppercase;
         text-align: center;
+        margin: 25px 0;
       }
       &__description {
         color: #373737;
@@ -65,8 +68,18 @@
         color: #ffffff;
         font-size: 14px;
         font-weight: 600;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 55%;
+        text-align: center;
+        display: none;
         &-title {}
         &-link {}
+      }
+      &:hover .choose__advantage-item__seemore {
+        display: block;
       }
     }
   }
