@@ -32,6 +32,7 @@
       padding: 35px 20px;
       font-size: 14px;
       position: relative;
+      overflow: hidden;
       &__img {
         display: block;
         width: 65px;
@@ -70,16 +71,22 @@
         font-weight: 600;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -55%;
         width: 100%;
         height: 55%;
         text-align: center;
-        display: none;
-        &-title {}
+        //display: none;
+        transition: 0.2s linear;
+        padding: 30px 0;
+        &-title {
+          text-transform: uppercase;
+        }
         &-link {}
       }
       &:hover .choose__advantage-item__seemore {
         display: block;
+        bottom: 0;
+        cursor: default;
       }
     }
   }
